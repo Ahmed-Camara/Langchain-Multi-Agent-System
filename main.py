@@ -1,4 +1,3 @@
-from src.tools.tools import web_search,scrape_url
-from rich import print
-res = scrape_url.invoke("https://www.nbcnews.com/artificial-intelligence")
-print(res)
+from src.pipelines.pipeline import research_pipeline
+topic = "The impact of AI on the job market in 2026"
+research_pipeline(topic)
